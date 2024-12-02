@@ -1,0 +1,45 @@
+.header {
+    background-color: #4E76BC;
+    height: 80px;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 2em;
+    margin-bottom: 2.5%;
+}
+
+.brand {
+    font-size: 2.2em;
+    color: #FFF;
+}
+
+.brand span {
+    font-weight: 600;
+    color: #E01A4F
+}
+
+.navbar_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1em;  
+}
+
+.navbar_ul li {
+    padding: .4em .6em;
+}
+
+.navbar_item {
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+}

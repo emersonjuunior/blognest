@@ -1,0 +1,43 @@
+.register,
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  align-items: end;
+  justify-content: center;
+  border-radius: 5px;
+  width: 60vw;
+  height: 550px;
+  margin: 0 auto;
+  background-image: url("./register.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #dcdcdc;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+#register_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.register_titles h1,
+.register_titles h2 {
+  margin-bottom: 0.2em;
+}
+
+.register_titles h1,
+.register_titles h2 span {
+  color: #4e76bc;
+  font-weight: 700;
+}
+
+label {
+  font-size: 1.05em;
+  font-weight: 300;
+}
