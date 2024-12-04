@@ -58,7 +58,7 @@ nav button:hover {
   color: #ddd;
 }
 
-input {
+input, textarea {
   border: none;
   height: 40px;
   width: 70%;
@@ -69,8 +69,15 @@ input {
   padding: 6px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border-bottom-color: #4e76bc;
+}
+
+textarea {
+  max-width: 70%;
+  min-width: 70%;
+  min-height: 40px;
+  max-height: 100px;
 }
 
 .submit-btn {

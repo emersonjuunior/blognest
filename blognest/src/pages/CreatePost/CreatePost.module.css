@@ -1,0 +1,38 @@
+.create_post,
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.create_post {
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 50vw;
+  height: 550px;
+  margin: 0 auto;
+  background-color: #dcdcdc;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.create_post h1,
+.create_post h2 {
+  margin-bottom: 0.2em;
+}
+
+.create_post h1,
+.create_post h2 span {
+  color: #4e76bc;
+  font-weight: 700;
+}
+
+label {
+  font-size: 1.05em;
+  font-weight: 300;
+}
+
+.create_post button {
+    width: 70%;
+}

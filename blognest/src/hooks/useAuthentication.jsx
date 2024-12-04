@@ -1,4 +1,4 @@
-import { db } from "../firebase/config";
+import { db, auth } from "../firebase/config";
 
 import {
   getAuth,
@@ -18,8 +18,6 @@ export const useAuthentication = () => {
   // clean up
   // deal with memory leak
   const [cancelled, setCancelled] = useState(false);
-
-  const auth = getAuth();
 
   function checkIfIsCancelled() {
     if (cancelled) {
@@ -70,6 +68,30 @@ export const useAuthentication = () => {
     signOut(auth);
   };
 
+  // login
+  const login = async (data) => {
+    checkIfIsCancelled();
+    setLoading(true);
+    setError(false);
+
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      setLoading(false);
+    } catch (error) {
+      let systemErrorMessage;
+
+      if (error.code === "auth/invalid-credential") {
+        systemErrorMessage =
+          "Credenciais inválidas. Por favor, verifique suas informações.";
+      } else {
+        systemErrorMessage = error.message;
+      }
+
+      setError(systemErrorMessage);
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     return () => setCancelled(true);
   }, []);
@@ -80,5 +102,6 @@ export const useAuthentication = () => {
     error,
     loading,
     logout,
+    login,
   };
 };

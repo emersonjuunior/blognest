@@ -21,11 +21,6 @@ label {
 
 }
 
-#register_wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .register_titles h1,
 .register_titles h2 {
   margin-bottom: 0.2em;
