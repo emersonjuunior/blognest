@@ -1,0 +1,62 @@
+.home_container,
+.home_top_container,
+.home_content,
+.home_top_wrapper,
+.home_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home_container h1 {
+  margin-bottom: 0.3em;
+  color: #4e76bc;
+}
+
+.home_container h2 {
+  margin-bottom: 0.4em;
+}
+
+.home_container h2 span {
+  color: #4e76bc;
+}
+
+.home_container form {
+  width: 40%;
+  margin-bottom: 3em;
+}
+
+.search_container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #c5c5c5;
+}
+
+.search_container button {
+  width: 10%;
+  border: none;
+  cursor: pointer;
+  border-left: 1px solid #c5c5c5;
+  background-color: #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button i {
+  font-size: 16px;
+}
+
+.search_container input {
+  width: 90%;
+  margin: 0;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.no_posts p {
+  margin-bottom: 0.4em;
+}

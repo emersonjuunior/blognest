@@ -1,0 +1,43 @@
+.post_wrapper h2 {
+    text-align: center;
+}
+
+.post_author {
+    margin-bottom: 2.4em;
+}
+
+.tags_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+
+.tags_container  span {
+  font-weight: 500;
+  color: #4E76BC
+}
+
+.post_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_wrapper button {
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4E76BC;
+}
+
+.post_wrapper button:hover {
+    background-color: #3765b5;
+}

@@ -53,7 +53,7 @@ const Header = () => {
           </li>
           {user && (
             <li>
-              <button onClick={logout}>Sair</button>
+              <button className={styles.navbar_item} onClick={logout}>Sair</button>
             </li>
           )}
         </ul>

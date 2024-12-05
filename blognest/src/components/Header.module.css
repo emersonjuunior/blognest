@@ -43,3 +43,10 @@ a {
 .active {
     background-color: black;
 }
+
+button.navbar_item {
+    border: none;
+    outline: none;
+    background-color: unset;
+    cursor: pointer;
+}
