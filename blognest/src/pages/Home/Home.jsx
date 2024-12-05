@@ -13,8 +13,14 @@ const Home = () => {
   const [query, setQuery] = useState("");
   const { documents: posts, loading } = useFetchDocuments("posts");
 
+  const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (query) {
+      return navigate(`search?q=${query}`)
+    }
   };
 
   return (
@@ -44,10 +50,13 @@ const Home = () => {
           {loading && <p>Carregando...</p>}
           {posts &&
             posts.map((post, index) => {
-              console.log(index % 2 === 0)
               return (
                 <Post
-                  className={(index + 2) % 2 === 0 ? "post-background-gray" : "post-background-normal"}
+                  className={
+                    (index + 2) % 2 === 0
+                      ? "post-background-gray"
+                      : "post-background-normal"
+                  }
                   key={post.id}
                   post={post}
                 />

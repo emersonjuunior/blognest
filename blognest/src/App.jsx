@@ -21,6 +21,8 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import CreatePost from "./pages/CreatePost/CreatePost.jsx";
 import Dashboard from "./pages/Dashboard/Dashboard.jsx";
+import Search from "./pages/Search/Search.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 
 const App = () => {
   const [user, setUser] = useState(undefined);
@@ -47,6 +49,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/search" element={<Search />} />
               <Route
                 path="/login"
                 element={!user ? <Login /> : <Navigate to="/" />}
@@ -55,8 +58,15 @@ const App = () => {
                 path="/register"
                 element={!user ? <Register /> : <Navigate to="/" />}
               />
-              <Route path="/posts/create" element={user ? <CreatePost /> : <Navigate to="/" />} />
-              <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to="/" />} />
+              <Route
+                path="/posts/create"
+                element={user ? <CreatePost /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/dashboard"
+                element={user ? <Dashboard /> : <Navigate to="/" />}
+              />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
           <Footer />

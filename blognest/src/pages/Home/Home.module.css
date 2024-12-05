@@ -11,13 +11,18 @@
   width: 100%;
 }
 
+.home_top_container {
+  height: 250px;
+  
+}
+
 .home_container h1 {
   margin-bottom: 0.3em;
   color: #4e76bc;
 }
 
 .home_container h2 {
-  margin-bottom: 0.4em;
+  margin-bottom: 1em;
 }
 
 .home_container h2 span {
@@ -25,7 +30,7 @@
 }
 
 .home_container form {
-  width: 40%;
+  width: 30%;
   margin-bottom: 3em;
 }
 
