@@ -48,7 +48,7 @@ const Register = () => {
 
   return (
     <section className={styles.register}>
-      <div id={styles.register_wrapper}>
+      <div className={styles.register_wrapper}>
         <div className={styles.register_titles}>
           <h1>Cadastro</h1>
           <h2>
