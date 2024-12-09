@@ -35,12 +35,9 @@ h6 {
   font-size: 0.6em;
 }
 
-.active::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 105%;
-  background-color: #e01a4f;
+.active {
+  background-color: #d02854;
+  padding: 8px;
 }
 
 input:focus,
