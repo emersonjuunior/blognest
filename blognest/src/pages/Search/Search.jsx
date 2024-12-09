@@ -35,7 +35,7 @@ const Search = () => {
             return (
               <Post
                 className={
-                  (index + 2) % 2 === 0
+                  (index) % 2 === 0
                     ? "post-background-gray"
                     : "post-background-normal"
                 }

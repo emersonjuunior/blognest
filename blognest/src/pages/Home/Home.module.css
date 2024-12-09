@@ -13,7 +13,6 @@
 
 .home_top_container {
   height: 250px;
-  
 }
 
 .home_container h1 {
@@ -44,6 +43,7 @@
   width: 10%;
   border: none;
   cursor: pointer;
+  border-radius: 0;
   border-left: 1px solid #c5c5c5;
   background-color: #c5c5c5;
   display: flex;

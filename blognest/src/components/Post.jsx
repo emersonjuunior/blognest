@@ -19,7 +19,7 @@ const Post = ({ post, className }) => {
           ))}
         </div>
         <div className={styles.post_btn_container}>
-          <Link to={`/posts/details`}>
+          <Link to={`/posts/${post.id}`}>
             <button>Ver Post</button>
           </Link>
         </div>

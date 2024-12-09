@@ -1,0 +1,56 @@
+.details_container, .button_container, .post_author, .tags_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details_container {
+  flex-direction: column;
+}
+
+.details_container h1 {
+  text-align: center;
+  margin-bottom: 0.4em;
+  color: #4e76bc;
+}
+
+.details_container img {
+  margin-bottom: 0.7em;
+}
+
+.post_content {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.details_container h3 {
+  margin-bottom: 0.4em;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.tags_container {
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+
+.tags_container span {
+  font-weight: 500;
+  color: #4e76bc;
+}
+
+.post_author {
+  font-size: 1em;
+  margin-bottom: .4em;
+}
+
+.post_author span {
+  color: #e01a4f;
+  margin-left: 2px;
+}
+
+.button_container {
+    margin-bottom: 1.4em;
+}
