@@ -20,6 +20,7 @@ import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import CreatePost from "./pages/CreatePost/CreatePost.jsx";
+import EditPost from "./pages/EditPost/EditPost.jsx"
 import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import Search from "./pages/Search/Search.jsx";
 import NotFound from "./pages/NotFound/NotFound.jsx";
@@ -62,7 +63,11 @@ const App = () => {
               />
               <Route
                 path="/posts/create"
-                element={user ? <CreatePost /> : <Navigate to="/" />}
+                element={user ? <CreatePost /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/posts/edit/:id"
+                element={user ? <EditPost/> : <Navigate to="/login" />}
               />
               <Route
                 path="/dashboard"

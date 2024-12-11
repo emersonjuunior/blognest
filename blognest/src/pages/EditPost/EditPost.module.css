@@ -1,0 +1,53 @@
+.edit_post,
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit_post {
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 50vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  background-color: #dfe2e0;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.edit_post_wrapper {
+    width: 80%;
+}
+
+.edit_post h1,
+.edit_post h2 {
+  margin-bottom: 0.2em;
+}
+
+.edit_post_titles span {
+    color: #e01a4f;
+}
+
+.edit_post h1 {
+  color: #4e76bc;
+  font-weight: 700;
+}
+
+label {
+  font-size: 1.05em;
+  font-weight: 300;
+}
+
+.edit_post button {
+    width: 50%;
+}
+
+.post_image {
+    max-width: 70%;
+    max-height: 500px;
+    margin-top: .3em;
+    margin-bottom: .5em;
+}
