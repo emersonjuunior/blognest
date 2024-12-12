@@ -9,7 +9,7 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  width: 50vw;
+  width: 60vw;
   height: 550px;
   margin: 0 auto;
   background-color: #dfe2e0;
@@ -35,4 +35,22 @@ label {
 
 .create_post button {
     width: 70%;
+}
+
+/* tablet and smaller screens */
+@media (max-width: 1000px) {
+  .create_post {
+    width: 80vw;
+  }
+}
+
+/* smartphones */
+@media (max-width: 480px){
+  .create_post {
+    width: 90vw;
+  }
+
+  .create_post input, .create_post textarea {
+    width: 80%;
+  }
 }

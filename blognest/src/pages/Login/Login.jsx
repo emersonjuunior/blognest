@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <section className={styles.login}>
-      <div id={styles.login_wrapper}>
+      <div className={styles.login_wrapper}>
         <div className={styles.login_titles}>
           <h1>Login</h1>
           <h2>

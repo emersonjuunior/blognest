@@ -65,3 +65,21 @@ button i {
 .no_posts p {
   margin-bottom: 0.4em;
 }
+
+/* tablet */
+@media (max-width: 834px) {
+.home_container form {
+  width: 60%;
+}
+}
+
+/* smartphones */
+@media (max-width: 480px) {
+  .home_container form {
+    width: 80%;
+  }
+
+  .home_top_wrapper h1, .home_top_wrapper h2 {
+    text-align: center;
+  }
+}

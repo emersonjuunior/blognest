@@ -51,3 +51,21 @@ label {
     margin-top: .3em;
     margin-bottom: .5em;
 }
+
+/* tablet and smaller screens */
+@media (max-width: 1000px) {
+  .edit_post {
+    width: 80vw;
+  }
+}
+
+/* smartphones */
+@media (max-width: 480px){
+  .edit_post {
+    width: 90vw;
+  }
+
+  .edit_post input, .edit_post textarea {
+    width: 80%;
+  }
+}

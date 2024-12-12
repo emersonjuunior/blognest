@@ -47,19 +47,19 @@ const About = () => {
           </div>
           <div className={styles.cards_container}>
             <div>
-              <i class="fa-regular fa-handshake"></i>
+              <i className="fa-regular fa-handshake"></i>
               <p>Suporte total</p>
             </div>
             <div>
-              <i class="fa-regular fa-lightbulb"></i>
+              <i className="fa-regular fa-lightbulb"></i>
               <p>Criatividade</p>
             </div>
             <div>
-              <i class="fa-solid fa-scale-balanced"></i>
+              <i className="fa-solid fa-scale-balanced"></i>
               <p>Integridade</p>
             </div>
             <div>
-              <i class="fa-solid fa-lock"></i>
+              <i className="fa-solid fa-lock"></i>
               <p>Segurança</p>
             </div>
           </div>
@@ -69,21 +69,21 @@ const About = () => {
         <div className={styles.tech_titles}>
           <h3>Tecnologias Utilizadas</h3>
           <h5>
-            Fomos feitos com <span>amor</span>, e com:
+            A aplicação foi feita com <span>amor</span>, e com:
           </h5>
         </div>
         <div className={styles.tech}>
           <div>
             <h6>JavaScript</h6>
-            <i class="devicon-javascript-plain colored"></i>
+            <i className="devicon-javascript-plain colored"></i>
           </div>
           <div>
             <h6>React</h6>
-            <i class="devicon-react-original colored"></i>
+            <i className="devicon-react-original colored"></i>
           </div>
           <div>
             <h6>FireBase</h6>
-            <i class="devicon-firebase-plain-wordmark colored"></i>
+            <i className="devicon-firebase-plain-wordmark colored"></i>
           </div>
         </div>
       </section>

@@ -46,3 +46,16 @@
     gap: 10px;
 }
 
+/* smartphones */
+@media (max-width: 480px){
+    .dashboard_post {
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard_buttons {
+        width: 80px;
+    }
+}
+

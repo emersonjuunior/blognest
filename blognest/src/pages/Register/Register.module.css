@@ -9,7 +9,7 @@ label {
   align-items: end;
   justify-content: center;
   border-radius: 5px;
-  width: 60vw;
+  width: 65vw;
   height: 550px;
   margin: 0 auto;
   background-image: url("./register.svg");
@@ -18,7 +18,7 @@ label {
   background-color: #dfe2e0;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-
+  margin-bottom: 1.5em;
 }
 
 .register_titles h1,
@@ -36,3 +36,37 @@ label {
   font-size: 1.05em;
   font-weight: 300;
 }
+
+/* smaller screens */
+@media (max-width: 1650px) {
+  .register {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1360px) {
+  .register {
+    width: 90vw;
+    background-size: 40%
+  }
+}
+
+@media (max-width: 1000px){
+  .register{
+    background-image: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .register input {
+    width: 80%;
+  }
+
+}
+  
+  /* smartphones */
+  @media (max-width: 480px) {
+    .register input {
+      width: 100%
+    }
+  }

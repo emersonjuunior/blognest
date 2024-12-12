@@ -28,7 +28,7 @@
 
 .nothing_found {
   margin-bottom: 0.4em;
-  width: 550px;
+  width: 600px;
   text-align: center;
   height: 340px;
   background-color: #e5e7e6;
@@ -45,4 +45,11 @@
 
 .posts_found {
   width: 100%;
+}
+
+@media (max-width: 600px){
+  .nothing_found {
+    width: 100vw;
+    height: 450px
+  }
 }
