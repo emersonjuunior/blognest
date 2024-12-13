@@ -50,3 +50,64 @@ button.navbar_item {
     background-color: unset;
     cursor: pointer;
 }
+
+.brand:hover {
+    color: #FFF
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 610px){
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
+
+    .menu_button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .menu_button i {
+        font-size: 2em;
+    }
+
+    .menu_items {
+        position: absolute;
+        z-index: 10;
+        top: 79px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .menu_ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        background-color: #4E76BC;
+        padding: 20px;
+        text-align: center;
+    }
+
+    a {
+        color: #FFF
+    }
+
+    button.menu_item {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+}

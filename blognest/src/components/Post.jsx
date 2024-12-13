@@ -6,7 +6,7 @@ const Post = ({ post, className }) => {
     <div className={className}>
       <div className={styles.post_wrapper}>
         <h2>{post.title}</h2>
-        <img src={post.image} alt={post.title} />
+        <img src={post.image} alt={post.title} className={styles.post_image} />
         <p className={styles.post_author}>
           <i>Criado por:</i> {post.createdBy}
         </p>
