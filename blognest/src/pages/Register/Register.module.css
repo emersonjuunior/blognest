@@ -12,7 +12,7 @@ label {
   width: 65vw;
   height: 550px;
   margin: 0 auto;
-  background-image: url("./register.svg");
+  background-image: url("/blognest/register.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-color: #dfe2e0;

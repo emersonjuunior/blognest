@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.start_image}>
-          <img src="/about.svg" alt="Início" />
+          <img src="/blognest/about.svg" alt="Início" />
         </div>
       </section>
       <section className={styles.values_container}>
