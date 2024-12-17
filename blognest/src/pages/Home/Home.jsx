@@ -47,7 +47,6 @@ const Home = () => {
       </div>
       <div className={styles.home_content}>
         <div className={styles.home_content_wrapper}>
-          {loading && <p>Carregando...</p>}
           {posts &&
             posts.map((post, index) => {
               return (

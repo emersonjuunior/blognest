@@ -15,10 +15,6 @@ const Dashboard = () => {
 
   const {deleteDocument} = useDeleteDocument("posts")
 
-  if (loading) {
-    return <p>Carregando...</p>;
-  }
-
   return (
     <section className={styles.dashboard_container}>
       <h1>Dashboard</h1>
@@ -28,6 +24,7 @@ const Dashboard = () => {
       {posts && posts.length === 0 ? (
         <div className={styles.no_posts}>
           Não tem posts
+          <br/>
           <Link to="/posts/create">
             <button className="submit-btn">Criar primeiro post</button>
           </Link>

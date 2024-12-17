@@ -46,6 +46,10 @@
     gap: 10px;
 }
 
+.no_posts {
+    text-align: center;
+}
+
 /* smartphones */
 @media (max-width: 480px){
     .dashboard_post {
